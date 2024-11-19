@@ -4,7 +4,7 @@
 
 Utilizando o built-in method input(), crie um programa que receba a altura e o peso de uma pessoa e imprima na tela o IMC da mesma.
 
-```
+```python
 import time # Funcão para manipulação de tempo 
 
 print("Bem vindo a calculadora de IMC.")
