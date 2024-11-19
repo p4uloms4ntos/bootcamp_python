@@ -92,8 +92,14 @@ try:
     if len(nome) == 0:
         raise ValueError("O nome não pode estar vazio.")
     # Verifica se há números no nome
-    elif any(char.isdigit() for char in nome):
+    elif any(char.isdigit() for char in nome):  #char.isdigit() é um método que verifica se char é um dígito (um número de 0 a 9). Ele retorna True se char for um dígito e False caso contrário.
+       # Suponha que nome = "Joao123".
+       # A expressão geradora char.isdigit() for char in nome irá gerar a seguinte sequência de valores: [False, False, False, False, True, True, True].
+       # A função any avaliará essa sequência e retornará True porque há pelo menos um True na sequência.
         raise ValueError("O nome não deve conter números.")
+    elif:
+        nome.isspace():
+        raise ValueError("O nome não pode ser apenas espaço")
     else:
         print("Nome válido:", nome)
 except ValueError as e:
