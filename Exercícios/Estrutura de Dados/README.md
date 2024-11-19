@@ -43,7 +43,7 @@ print("\n")
 print("O domínio do e-mail é: {}".format(dominio))
 ```
 
-### Exercício 4
+### Exercício 4 
 
 Faça um programa para uma loja de tintas. A pessoa informa a área em m2 que deseja pintar, e o script calculará a quantidade de latas de tinta que a pessoa deve comprar e o valor. Considere que cada litro de tinta pinta 3m2, que cada lata contém 18L e que custa R$ 80.
 
