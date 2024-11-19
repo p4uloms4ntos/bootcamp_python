@@ -19,5 +19,15 @@ time.sleep(1) # dar uma pausa de 1 s
 print("Seu IMC é: {:.2f}".format(peso / altura ** 2))
 ```
 
+### Exercício 2
 
+Escreva um programa que pergunte o nome completo do usuário e cumprimente o mesmo pelo primeiro nome.
+
+```python
+print("Qual é seu nome completo?")
+nome = input()
+primeiro_nome = nome.split()[0]
+print("\n")
+print("Olá, {}!".format(primeiro_nome))
+```
 
