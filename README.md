@@ -11,8 +11,8 @@ Este espaço é um reflexo da jornada de aprendizado, mostrando o progresso e as
 ## 📊 Exercícios Python
 
 * Estrutura de Dados
-* Operadores de Comparação e Laços
 * TypeError, Type Check e Conversion
+* Estruturas de Controle de Fluxo
 
 
 ## 🗂️ Projetos
