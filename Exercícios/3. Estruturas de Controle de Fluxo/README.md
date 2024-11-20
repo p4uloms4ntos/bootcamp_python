@@ -211,7 +211,7 @@ salario_valido = False
 bonus_valido = False
 
 # Loop para verificar o nome
-while not nome_valido:
+while not nome_valido: # (while nome_valido is not True:)
     try:
         nome = input("Digite seu nome: ")
         if len(nome) == 0:
