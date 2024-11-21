@@ -17,3 +17,5 @@ Este espaço é um reflexo da jornada de aprendizado, mostrando o progresso e as
 
 ## 🗂️ Projetos
 
+* Um bilhão de linhas: Desafio de Processamento de Dados com Python
+
