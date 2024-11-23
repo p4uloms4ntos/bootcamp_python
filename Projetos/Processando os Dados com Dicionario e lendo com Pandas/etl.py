@@ -17,45 +17,33 @@ def ler_csv(nome_arquivo_csv: str) -> list[dict]:
 
 vendas_itens = ler_csv(path_arquivo)
 
-def filtrar_produtos_nao_entregue(lista: list[dict]) -> list[dict]: #
-    produto_nao_entregue = []
-    for item in lista:
-        produto = item["produto"]
-        entregue = item["entregue"]
-        if entregue == 'False':
-            produto_nao_entregue.append(produto)
-        else:
-            pass
+def filtrar_produtos_nao_entregue(lista: list[dict]) -> list[dict]: 
+    """
+    Função que filtra produtos onde entrega = True
+    """
+    lista_com_produtos_filtrados = []
+    for produto in lista:
+        if produto.get("entregue") == 'True':
+            lista_com_produtos_filtrados.append(produto)
+    return lista_com_produtos_filtrados
             
-    return produto_nao_entregue
-
-def linhas_produtos_nao_entregue(lista: list[dict]) -> list[dict]:
-    produtos_nao_entreguem = []
-    for item in lista:
-        if item["entregue"] == "False":
-            produtos_nao_entreguem.append(item)
-    return produtos_nao_entreguem
-        
-linhas_produtos_nao_entregue(vendas_itens)
+def somar_valores_dos_produtos(lista: list[dict]) -> int:
+    """
+    Função que soma os valores dos produtos que estão na lista
+    """
+    valor_total = 0
+    for produto in lista:
+        valor_total += int(produto.get("price"))
+    return valor_total
 
 
-    
-
-    #for item in lista:
-     #   entregue = item["entregue"]
-        #produto = item.get["produto"]
-      #  print(entregue)
-    
-    #return print(entregue)
-
-filtrar_produtos_nao_entregue(vendas_itens)
+somar_valores_dos_produtos(vendas_itens)
 
 
-vendas_itens
-
-for item in vendas_itens:
-    entregue = item["entregue"]
-    print(entregue)
-
+lista_de_produtos = ler_csv(path_arquivo)
+produtos_entregues = filtrar_produtos_nao_entregue(lista_de_produtos)
+valor_dos_produtos_entregues = somar_valores_dos_produtos(produtos_entregues)
+print(valor_dos_produtos_entregues)
+  
 
 
